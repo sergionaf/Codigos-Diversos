@@ -1,0 +1,12 @@
+//  ThingSpeak gravando field com NULL
+
+
+var atual = datasources["ALEXANDRE SANTOS AKSGINFORMATICA"]["feeds"][1]["field3"];
+
+var xatual = String(atual);
+//return(y)
+if (xatual != "null" )
+  {   var anterior = xatual;
+       return(xatual) }
+else 
+  {   return(anterior) }
