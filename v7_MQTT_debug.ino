@@ -106,7 +106,7 @@ void loop() {
   }
 
 // *** Sensor DHT11 ***
-  int t = dht.readTemperature(); // Read temperature from DHT sensor.
+  float t = dht.readTemperature(); // Read temperature from DHT sensor.
   int h = dht.readHumidity();  // Read humidity from DHT sensor.
 
   Serial.println();
@@ -118,7 +118,7 @@ void loop() {
   
   // ***** Sensor DS18b20 *********
   sensors.requestTemperatures();
-  int tempC = sensors.getTempC(sensor1);
+  float tempC = sensors.getTempC(sensor1);
   //Atualiza temperaturas minima e maxima
   if (tempC < tempMin)
   {
@@ -205,7 +205,7 @@ void mqttpublish() {
   
   // ***** Sensor DS18b20 *********
   sensors.requestTemperatures();
-  int tempC = sensors.getTempC(sensor1);
+  float tempC = sensors.getTempC(sensor1);
   //Atualiza temperaturas minima e maxima
   if (tempC < tempMin)
   {
