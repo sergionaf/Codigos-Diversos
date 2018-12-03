@@ -205,7 +205,7 @@ void mqttpublish() {
   
   // ***** Sensor DS18b20 *********
   sensors.requestTemperatures();
-  float tempC = sensors.getTempC(sensor1);
+  int tempC = sensors.getTempC(sensor1);
   //Atualiza temperaturas minima e maxima
   if (tempC < tempMin)
   {
