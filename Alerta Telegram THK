@@ -1,0 +1,16 @@
+
+URL Naveagador
+https://api.telegram.org/bot<BOTTOKEN>/sendMessage?chat_id=-<CHATID>&text=<MEUTEXTO>
+
+No THK
+
+URL
+
+    https://api.telegram.org/bot<BOTTOKEN>/sendMessage?
+    
+	https://api.telegram.org/bot1671962011:AAHYb5Bf05Ddu3N1lxr7w4bAeDJCpR9rM0Y/sendMessage?
+
+Body
+    {"chat_id":"-585340920","text":"%%channel_1208304_field_1%%"} //atencao chat id inicia com sinal de menos "-"
+
+    {"chat_id":"-585340920","text":"Site S João - Temperatura: %%channel_1208304_field_1%% C"}
